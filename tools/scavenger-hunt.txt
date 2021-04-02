@@ -8,7 +8,7 @@
 
 5. You can use 'nc -v <ip address> <port number (or range)>'. The -v flag will specificaly say whether the connection was refused or accepted. 
 
-6. On mac, the comman 'nsof -P | grep LISTEN' will output all the ports with listening processes.
+6. On mac, the command 'nsof -P | grep LISTEN' will output all the ports with listening processes.
 
 7. You can save the page by issuing the command 'curl {webpage} > {output_file.html}'.
 
