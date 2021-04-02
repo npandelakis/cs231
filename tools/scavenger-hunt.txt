@@ -1,0 +1,17 @@
+1. 137.22.180.233 (On mac, you can distinguish between the two by using ipconfig getifaddr en1 or ipconfig getifaddr en0).
+
+2. You can use 'nslookup <host name>' to obtain the ip address associated with a given host name.
+
+3. You can use 'nslookup <ip address>' to obtain the host name(s) associated with a given ip address.
+
+4. You transfer a file using 'scp <filepath>/<file> <user>@<ip address>:<destination path>'. Interestingly, this doesn't work with at Carleton for me. I had to use <user>@eduroam-180-233.dyn.carleton.edu instead.
+
+5. You can use 'nc -v <ip address> <port number (or range)>'. The -v flag will specificaly say whether the connection was refused or accepted. 
+
+6. On mac, the comman 'nsof -P | grep LISTEN' will output all the ports with listening processes.
+
+7. You can save the page by issuing the command 'curl {webpage} > {output_file.html}'.
+
+8. You can view the response headers using 'curl -IL <wepbage>'.
+
+9. Adding the '-v' flag to the previous command (or right onto -LV) will give you the verbose output, which includes the request headers.
