@@ -1,0 +1,2 @@
+1. Alice and Bob's shared secret is 12.
+2. To solve for Alice and Bob's secret, we observe that 17 and 61 are coprime, so
