@@ -1,0 +1,24 @@
+﻿Nick Pandelakis and Owen Barnett
+CS 231
+7 May 2021
+
+
+Part 1
+Passwords cracked: 2326
+Total time: 9 hours 2 minutes (using 8 threads on a 2015 mac)
+Number of hashes computed: 71,690,865,752
+Passwords cracked per number of hashes computed: 1 password per 30,821,524 hashes.
+Time per password cracked: 13.93 seconds per password (using 8 threads), so ~111 seconds per password on a single thread when computing all doubles plus single words. For just single words, we computed 1162 passwords in 0.60s, roughly 0.0005 seconds per password.
+
+
+Part 2
+Passwords cracked: 1133
+Total time: 1124.9454 seconds
+Number of hashes computed: 466192417
+Passwords cracked per number of hashes computed: 1 password per 411,467 hashes
+Time per password cracked: 0.99 seconds per password
+
+
+
+
+In part two, our time per password when cracking the salted 1 word passwords was 1980 times slower than the unsalted passwords. Instead of calculating the hash just once for all the words and then checking for a match, we have to potentially calculate the hash of all words for each salt + password combination. If we didn’t stop once we found a match, this would have taken 2326 times as long.
